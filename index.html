@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="only light">
+    <title>Калькулятор</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="page">
+    <form class="calculator-form" autocomplete="off">
+        <div class="data-user">
+            <label class="data-user__label" for="name-user">Имя</label>
+            <input class="data-user__input" type="text" name="name-user" id="name-user" autofocus/>
+        </div>
+        <div class="data-user data-user__date-of-birth">
+            <label class="data-user__label" for="date-of-birth">Дата рождения</label>
+            <input class="data-user__input" type="text" name="date-of-birth" id="date-of-birth"/>
+        </div>
+        <div class="data-user">
+            <span class="data-user__label" for="age-user">Возраст</span>
+            <span class="data-user__age"></span>
+        </div>
+    </form>
+    <div class="diagram">
+        <svg class="diagram__svg" width="845" height="844" viewBox="0 0 845 844" fill="none"
+            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <path d="M670.989 668.917C615.639 581.18 670.989 444.571 773.447 422.195" stroke="#F4CA76"
+                stroke-width="1.17767" />
+            <path d="M423.533 770.262C447.09 669.235 583.197 612.659 671.098 669.857" stroke="#F4CA76"
+                stroke-width="1.17767" />
+            <path d="M422.166 72.9187C398.609 173.946 262.501 230.522 174.601 173.323" stroke="#F4CA76"
+                stroke-width="1.17767" />
+            <path d="M423.147 72.9175C446.704 173.945 582.811 230.52 670.712 173.322" stroke="#F4CA76"
+                stroke-width="1.17767" />
+            <path d="M177.274 668.036C265.6 613.632 401.607 670.448 422.88 773.14" stroke="#F4CA76"
+                stroke-width="1.17767" />
+            <path d="M72.1652 421.863C173.519 443.97 232.04 579.253 176.107 667.964" stroke="#F4CA76"
+                stroke-width="1.17767" />
+            <path d="M72.1837 421.575C173.538 399.468 232.058 264.186 176.125 175.474" stroke="#F4CA76"
+                stroke-width="1.17767" />
+            <path d="M771.899 421.082C670.809 397.799 613.863 261.846 670.823 173.791" stroke="#F4CA76"
+                stroke-width="1.17767" />
+            <line x1="421.078" y1="598.603" x2="602.44" y2="417.241" stroke="#6AD44F" stroke-width="2.35534" />
+            <path
+                d="M474.501 296.229L474.685 297.043L475.39 296.597L672.686 172.01L548.099 369.306L547.654 370.011L548.467 370.195L776.073 421.607L548.467 473.02L547.654 473.204L548.099 473.909L672.686 671.205L475.39 546.617L474.685 546.172L474.501 546.986L423.089 774.591L371.676 546.986L371.492 546.172L370.787 546.617L173.491 671.205L298.079 473.909L298.524 473.204L297.711 473.02L70.1046 421.607L297.711 370.195L298.524 370.011L298.079 369.306L173.491 172.01L370.787 296.597L371.492 297.043L371.676 296.229L423.089 68.6232L474.501 296.229Z"
+                stroke="#F4CA76" stroke-width="1.17767" />
+            <rect x="150.702" y="420.693" width="385.098" height="385.098" transform="rotate(-45 150.702 420.693)"
+                stroke="#F4CA76" stroke-width="1.17767" />
+            <rect x="230.54" y="227.88" width="385.098" height="385.098" stroke="#F4CA76" stroke-width="1.17767" />
+            <line x1="229.956" y1="227.556" x2="615.054" y2="612.654" stroke="#F4CA76" stroke-width="1.17767" />
+            <line x1="615.466" y1="227.92" x2="230.367" y2="613.019" stroke="#F4CA76" stroke-width="1.17767" />
+            <line x1="422.5" y1="149.565" x2="422.5" y2="692.472" stroke="#F4CA76" stroke-width="1.17767" />
+            <line x1="151.047" y1="421.019" x2="695.131" y2="421.019" stroke="#F4CA76" stroke-width="1.17767" />
+            <circle cx="421.911" cy="118.946" r="28.2641" fill="#D084FF" stroke="#9E00FF" stroke-width="2.35534" />
+            <text class="north__circle-violet-text" transform="translate(421.911 125)" text-anchor="middle"
+                style="font-size: 22px;fill: #000000;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <circle cx="207.575" cy="208.449" r="28.2641" fill="white" stroke="#3E3E3E" stroke-width="2.35534" />
+            <text class="north-west__circle-big-text" transform="translate(207.575 215)" text-anchor="middle"
+                style="font-size: 22px;fill: #000000;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <circle cx="636.247" cy="207.271" r="28.2641" fill="white" stroke="#3E3E3E" stroke-width="2.35534" />
+            <text class="north-east__circle-big-text" transform="translate(636.247 215)" text-anchor="middle"
+                style="font-size: 22px;fill: #000000;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <circle cx="725.138" cy="420.994" r="28.2641" transform="rotate(-176.5 725.138 420.994)" fill="#FF8989"
+                stroke="#EC0000" stroke-width="2.35534" />
+            <text class="east__circle-red-text" transform="translate(725.138 428)" text-anchor="middle"
+                style="font-size: 22px;fill: #000000;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <g filter="url(#filter0_d_29_3)">
+                <circle cx="421.911" cy="421.607" r="29.4418" fill="#FFEB7E" />
+                <circle cx="421.911" cy="421.607" r="28.2641" stroke="#FADE49" stroke-width="2.35534" />
+                <text class="center__circle-yellow-text" transform="translate(421.911 430)" text-anchor="middle"
+                    style="font-size: 22px;fill: #000000;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            </g>
+            <circle cx="483.15" cy="421.607" r="28.2641" fill="white" stroke="#3E3E3E" stroke-width="2.35534" />
+            <text class="center__circle-white-text" transform="translate(483.15 430)" text-anchor="middle"
+                style="font-size: 22px;fill: #000000;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <circle cx="121.605" cy="420.43" r="28.2641" fill="#D084FF" stroke="#9E00FF" stroke-width="2.35534" />
+            <text class="west__circle-violet-text" transform="translate(121.605 430)" text-anchor="middle"
+                style="font-size: 22px;fill: #000000;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <circle cx="209.931" cy="634.766" r="28.2641" fill="white" stroke="#3E3E3E" stroke-width="2.35534" />
+            <text class="south-west__circle-big-text" transform="translate(209.931 642)" text-anchor="middle"
+                style="font-size: 22px;fill: #000000;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <circle cx="636.247" cy="634.766" r="28.2641" fill="white" stroke="#3E3E3E" stroke-width="2.35534" />
+            <text class="south-east__circle-big-text" transform="translate(636.247 642)" text-anchor="middle"
+                style="font-size: 22px;fill: #000000;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <circle cx="423.089" cy="723.091" r="28.2641" fill="#FF8989" stroke="#EC0000" stroke-width="2.35534" />
+            <text class="south__circle-red-text" transform="translate(423.089 733)" text-anchor="middle"
+                style="font-size: 22px;fill: #000000;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <circle cx="423.089" cy="183.717" r="22.3757" fill="#8692FF" stroke="#0014CC" stroke-width="2.35534" />
+            <text class="north__circle-blue-text" transform="translate(423.089 190)" text-anchor="middle"
+                style="font-size: 20px;fill: #000000;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <circle cx="254.682" cy="253.2" r="22.3757" fill="white" stroke="#3E3E3E" stroke-width="2.35534" />
+            <text class="north-west__circle-middle-text" transform="translate(254.682 260)" text-anchor="middle"
+                style="font-size: 20px;fill: #000000;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <circle cx="254.682" cy="588.837" r="22.3757" fill="white" stroke="#3E3E3E" stroke-width="2.35534" />
+            <text class="south-west__circle-middle-text" transform="translate(254.682 595)" text-anchor="middle"
+                style="font-size: 20px;fill: #000000;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <circle cx="423.089" cy="657.141" r="22.3757" fill="white" stroke="#3E3E3E" stroke-width="2.35534" />
+            <text class="south__circle-white-text" transform="translate(423.089 665)" text-anchor="middle"
+                style="font-size: 20px;fill: #000000;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <circle cx="590.318" cy="588.837" r="22.3757" fill="white" stroke="#3E3E3E" stroke-width="2.35534" />
+            <text class="south-east__circle-middle-text" transform="translate(590.318 595)" text-anchor="middle"
+                style="font-size: 20px;fill: #000000;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <circle cx="590.318" cy="253.2" r="22.3757" fill="white" stroke="#3E3E3E" stroke-width="2.35534" />
+            <text class="north-east__circle-middle-text" transform="translate(590.318 260)" text-anchor="middle"
+                style="font-size: 20px;fill: #000000;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <circle cx="659.8" cy="420.429" r="22.3757" fill="white" stroke="#3E3E3E" stroke-width="2.35534" />
+            <text class="east__circle-white-text" transform="translate(659.8 428)" text-anchor="middle"
+                style="font-size: 20px;fill: #000000;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <circle cx="186.377" cy="420.429" r="22.3757" fill="#8692FF" stroke="#0014CC" stroke-width="2.35534" />
+            <text class="west__circle-blue-text" transform="translate(186.377 427)" text-anchor="middle"
+                style="font-size: 20px;fill: #000000;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <circle cx="423.089" cy="228.469" r="16.4874" fill="#81CBFF" stroke="#0097FF" stroke-width="2.35534" />
+            <text class="north__circle-lightblue-text" transform="translate(423.089 235)" text-anchor="middle"
+                style="font-size: 20px;fill: #000000;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <circle cx="286.479" cy="284.997" r="16.4874" fill="white" stroke="#3E3E3E" stroke-width="2.35534" />
+            <text class="north-west__circle-small-text" transform="translate(286.479 292)" text-anchor="middle"
+                style="font-size: 20px;fill: #000000;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <circle cx="558.521" cy="284.997" r="16.4874" fill="white" stroke="#3E3E3E" stroke-width="2.35534" />
+            <text class="north-east__circle-small-text" transform="translate(558.521 292)" text-anchor="middle"
+                style="font-size: 20px;fill: #000000;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <circle cx="615.049" cy="420.43" r="16.4874" fill="#FFCC69" stroke="#FFA800" stroke-width="2.35534" />
+            <text class="east__circle-orange-text" transform="translate(615.049 428)" text-anchor="middle"
+                style="font-size: 20px;fill: #000000;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <circle cx="509.059" cy="509.933" r="16.4874" fill="white" stroke="#3E3E3E" stroke-width="2.35534" />
+            <text class="green-line__circle-middle-text" transform="translate(509.059 516)" text-anchor="middle"
+                style="font-size: 20px;fill: #000000;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <circle cx="473.729" cy="545.263" r="16.4874" fill="white" stroke="#3E3E3E" stroke-width="2.35534" />
+            <text class="green-line__circle-heart-text" transform="translate(473.729 553)" text-anchor="middle"
+                style="font-size: 20px;fill: #000000;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <circle cx="546.744" cy="472.247" r="16.4874" fill="white" stroke="#3E3E3E" stroke-width="2.35534" />
+            <text class="green-line__circle-many-text" transform="translate(546.744 479)" text-anchor="middle"
+                style="font-size: 20px;fill: #000000;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <circle cx="421.911" cy="321.505" r="16.4874" fill="#ADFF98" stroke="#6AD44F" stroke-width="2.35534" />
+            <text class="north__circle-green-text" transform="translate(421.911 328)" text-anchor="middle"
+                style="font-size: 20px;fill: #000000;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <circle cx="320.631" cy="420.43" r="16.4874" fill="#ADFF98" stroke="#6AD44F" stroke-width="2.35534" />
+            <text class="west__circle-green-text" transform="translate(320.631 427)" text-anchor="middle"
+                style="font-size: 20px;fill: #000000;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <circle cx="231.128" cy="421.607" r="16.4874" fill="#81CBFF" stroke="#0097FF" stroke-width="2.35534" />
+            <text class="west__circle-lightblue-text" transform="translate(231.128 429)" text-anchor="middle"
+                style="font-size: 20px;fill: #000000;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <circle cx="287.657" cy="555.862" r="16.4874" fill="white" stroke="#3E3E3E" stroke-width="2.35534" />
+            <text class="south-west__circle-small-text" transform="translate(287.657 563)" text-anchor="middle"
+                style="font-size: 20px;fill: #000000;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <circle cx="423.089" cy="612.39" r="16.4874" fill="#FFCC69" stroke="#FFA800" stroke-width="2.35534" />
+            <text class="south__circle-orange-text" transform="translate(423.089 619)" text-anchor="middle"
+                style="font-size: 20px;fill: #000000;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <circle cx="558.521" cy="557.039" r="16.4874" fill="white" stroke="#3E3E3E" stroke-width="2.35534" />
+            <text class="south-east__circle-small-text" transform="translate(558.521 565)" text-anchor="middle"
+                style="font-size: 20px;fill: #000000;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <text transform="translate(16 429)"
+                style="font-size: 20px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif">0
+                лет</text>
+            <text transform="translate(16 459)"
+                style="font-size: 20px;fill: #F4CA76;font-weight: 700;text-shadow: 0px 0px 17.6651px #FFFFFF;font-family: Futura, Arial, Helvetica, sans-serif">ЗЕМЛЯ</text>
+            <text transform="translate(119 167)"
+                style="font-size: 20px;fill: #F4CA76;font-family: Futura Md BT, Arial">10
+                лет</text>
+            <text transform="translate(395 28)"
+                style="font-size: 20px;fill: #F4CA76;font-weight: 700; text-shadow: 0px 0px 17.6651px #FFFFFF;font-family: Futura, Arial, Helvetica, sans-serif">НЕБО</text>
+            <text transform="translate(395 58)"
+                style="font-size: 20px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif">20
+                лет</text>
+            <text transform="translate(675 167)"
+                style="font-size: 20px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif">30
+                лет</text>
+            <text transform="translate(780 429)"
+                style="font-size: 20px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif">40
+                лет</text>
+            <text transform="translate(770 459)"
+                style="font-size: 20px;fill: #F4CA76;font-weight: 700;text-shadow: 0px 0px 17.6651px #FFFFFF;font-family: Futura, Arial, Helvetica, sans-serif">ЗЕМЛЯ</text>
+            <text transform="translate(678 690)"
+                style="font-size: 20px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif">50
+                лет</text>
+            <text transform="translate(395 798)"
+                style="font-size: 20px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif">60
+                лет</text>
+            <text transform="translate(395 828)"
+                style="font-size: 20px;fill: #F4CA76;font-weight: 700;text-shadow: 0px 0px 17.6651px #FFFFFF;font-family: Futura, Arial, Helvetica, sans-serif">НЕБО</text>
+            <text transform="translate(119 690)"
+                style="font-size: 20px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif">70
+                лет</text>
+            <text transform="translate(532 463) rotate(-45)"
+                style="font-size: 26px;fill: #F4CA76;font-weight: 700;font-family: Futura, Arial, Helvetica, sans-serif">&#8381;</text>
+            <text transform="translate(397 470)"
+                style="font-size: 17px;fill: #F4CA76;text-shadow: 0px 0px 17px #FFFFFF;font-family: Futura, Arial, Helvetica, sans-serif">личная</text>
+            <text transform="translate(405 485)"
+                style="font-size: 17px;fill: #F4CA76;text-shadow: 0px 0px 17px #FFFFFF;font-family: Futura, Arial, Helvetica, sans-serif">сила</text>
+            <text transform="translate(310 330) rotate(45)"
+                style="font-size: 17px;fill: #F4CA76;text-shadow: 0px 0px 17px #FFFFFF;font-family: Futura, Arial, Helvetica, sans-serif">род
+                отца</text>
+            <text transform="translate(485 379) rotate(-45)"
+                style="font-size: 17px;fill: #F4CA76;text-shadow: 0px 0px 17px #FFFFFF;font-family: Futura, Arial, Helvetica, sans-serif">род
+                матери</text>
+            <text transform="translate(124 381)"
+                style="font-size: 12px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif">1-2</text>
+            <text class="decade-1-2" transform="translate(165 382)" text-anchor="middle"
+                style="font-size: 14px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <text transform="translate(137 365)"
+                style="font-size: 12px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif">2-3</text>
+            <text class="decade-2-3" transform="translate(177 366)" text-anchor="middle"
+                style="font-size: 14px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <text transform="translate(149 346)"
+                style="font-size: 12px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif">3-4</text>
+            <text class="decade-3-4" transform="translate(189 347)" text-anchor="middle"
+                style="font-size: 14px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <text transform="translate(130 328)"
+                style="font-size: 20px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif">5
+                лет</text>
+            <text class="decade-5" transform="translate(198 329)" text-anchor="middle"
+                style="font-size: 12px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <text transform="translate(166 306)"
+                style="font-size: 12px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif">6-7</text>
+            <text class="decade-6-7" transform="translate(205 306)" text-anchor="middle"
+                style="font-size: 14px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <text transform="translate(171 285)"
+                style="font-size: 12px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif">7-8</text>
+            <text class="decade-7-8" transform="translate(209 285)" text-anchor="middle"
+                style="font-size: 14px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <text transform="translate(173 263)"
+                style="font-size: 12px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif">8-9</text>
+            <text class="decade-8-9" transform="translate(210 265)" text-anchor="middle"
+                style="font-size: 14px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <text transform="translate(260 193) rotate(-70)"
+                style="font-size: 12px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif">11-12</text>
+            <text class="decade-11-12" transform="translate(259 215)" text-anchor="middle"
+                style="font-size: 14px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <text transform="translate(280 191) rotate(-70)"
+                style="font-size: 12px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif">12-13</text>
+            <text class="decade-12-13" transform="translate(280 213)" text-anchor="middle"
+                style="font-size: 14px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <text transform="translate(302 184) rotate(-70)"
+                style="font-size: 12px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif">13-14</text>
+            <text class="decade-13-14" transform="translate(302 209)" text-anchor="middle"
+                style="font-size: 14px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <text transform="translate(323 177) rotate(-70)"
+                style="font-size: 20px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif">15 лет</text>
+            <text class="decade-15" transform="translate(323 202)" text-anchor="middle"
+                style="font-size: 14px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <text transform="translate(342 168) rotate(-70)"
+                style="font-size: 12px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif">16-17</text>
+            <text class="decade-16-17" transform="translate(344 192)" text-anchor="middle"
+                style="font-size: 14px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <text transform="translate(362 155) rotate(-70)"
+                style="font-size: 12px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif">17-18</text>
+            <text class="decade-17-18" transform="translate(361 182)" text-anchor="middle"
+                style="font-size: 14px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <text transform="translate(378 143) rotate(-70)"
+                style="font-size: 12px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif">18-19</text>
+            <text class="decade-18-19" transform="translate(379 168)" text-anchor="middle"
+                style="font-size: 14px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <text transform="translate(473 141) rotate(-70)"
+                style="font-size: 12px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif">21-22</text>
+            <text class="decade-21-22" transform="translate(468 167)" text-anchor="middle"
+                style="font-size: 14px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <text transform="translate(491 155) rotate(-70)"
+                style="font-size: 12px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif">22-23</text>
+            <text class="decade-22-23" transform="translate(484 180)" text-anchor="middle"
+                style="font-size: 14px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <text transform="translate(508 166) rotate(-70)"
+                style="font-size: 12px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif">23-24</text>
+            <text class="decade-23-24" transform="translate(503 193)" text-anchor="middle"
+                style="font-size: 14px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <text transform="translate(532 177) rotate(-70)"
+                style="font-size: 20px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif">25 лет</text>
+            <text class="decade-25" transform="translate(523 203)" text-anchor="middle"
+                style="font-size: 14px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <text transform="translate(551 186) rotate(-70)"
+                style="font-size: 12px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif">26-27</text>
+            <text class="decade-26-27" transform="translate(543 209)" text-anchor="middle"
+                style="font-size: 14px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <text transform="translate(570 189) rotate(-70)"
+                style="font-size: 12px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif">27-28</text>
+            <text class="decade-27-28" transform="translate(565 214)" text-anchor="middle"
+                style="font-size: 14px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <text transform="translate(593 190) rotate(-70)"
+                style="font-size: 12px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif">28-29</text>
+            <text class="decade-28-29" transform="translate(588 215)" text-anchor="middle"
+                style="font-size: 14px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <text transform="translate(655 264)"
+                style="font-size: 12px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif">31-32</text>
+            <text class="decade-31-32" transform="translate(635 266)" text-anchor="middle"
+                style="font-size: 14px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <text transform="translate(658 284)"
+                style="font-size: 12px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif">32-33</text>
+            <text class="decade-32-33" transform="translate(637 287)" text-anchor="middle"
+                style="font-size: 14px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <text transform="translate(662 306)"
+                style="font-size: 12px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif">33-34</text>
+            <text class="decade-33-34" transform="translate(640 306)" text-anchor="middle"
+                style="font-size: 14px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <text transform="translate(672 327)"
+                style="font-size: 20px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif">35
+                лет</text>
+            <text class="decade-35" transform="translate(647 329)" text-anchor="middle"
+                style="font-size: 14px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <text transform="translate(680 348)"
+                style="font-size: 12px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif">36-37</text>
+            <text class="decade-36-37" transform="translate(656 347)" text-anchor="middle"
+                style="font-size: 14px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <text transform="translate(690 366)"
+                style="font-size: 12px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif">37-38</text>
+            <text class="decade-37-38" transform="translate(670 367)" text-anchor="middle"
+                style="font-size: 14px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <text transform="translate(705 382)"
+                style="font-size: 12px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif">38-39</text>
+            <text class="decade-38-39" transform="translate(684 384)" text-anchor="middle"
+                style="font-size: 14px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <text transform="translate(702 473)"
+                style="font-size: 12px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif">41-42</text>
+            <text class="decade-41-42" transform="translate(680 473)" text-anchor="middle"
+                style="font-size: 14px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <text transform="translate(690 490)"
+                style="font-size: 12px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif">42-43</text>
+            <text class="decade-42-43" transform="translate(667 490)" text-anchor="middle"
+                style="font-size: 14px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <text transform="translate(678 508)"
+                style="font-size: 12px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif">43-44</text>
+            <text class="decade-43-44" transform="translate(657 508)" text-anchor="middle"
+                style="font-size: 14px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <text transform="translate(670 530)"
+                style="font-size: 20px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif">45
+                лет</text>
+            <text class="decade-45" transform="translate(647 528)" text-anchor="middle"
+                style="font-size: 14px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <text transform="translate(661 550)"
+                style="font-size: 12px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif">46-47</text>
+            <text class="decade-46-47" transform="translate(640 550)" text-anchor="middle"
+                style="font-size: 14px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <text transform="translate(657 572)"
+                style="font-size: 12px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif">47-48</text>
+            <text class="decade-47-48" transform="translate(635 572)" text-anchor="middle"
+                style="font-size: 14px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <text transform="translate(656 592)"
+                style="font-size: 12px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif">48-49</text>
+            <text class="decade-48-49" transform="translate(633 594)" text-anchor="middle"
+                style="font-size: 14px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <text transform="translate(583 684) rotate(-70)"
+                style="font-size: 12px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif">51-52</text>
+            <text class="decade-51-52" transform="translate(588 639)" text-anchor="middle"
+                style="font-size: 14px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <text transform="translate(561 686) rotate(-70)"
+                style="font-size: 12px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif">52-53</text>
+            <text class="decade-52-53" transform="translate(566 641)" text-anchor="middle"
+                style="font-size: 14px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <text transform="translate(541 691) rotate(-70)"
+                style="font-size: 12px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif">53-54</text>
+            <text class="decade-53-54" transform="translate(545 645)" text-anchor="middle"
+                style="font-size: 14px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <text transform="translate(514 722) rotate(-70)"
+                style="font-size: 20px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif">55 лет</text>
+            <text class="decade-55" transform="translate(523 652)" text-anchor="middle"
+                style="font-size: 14px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <text transform="translate(500 709) rotate(-70)"
+                style="font-size: 12px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif">56-57</text>
+            <text class="decade-56-57" transform="translate(502 662)" text-anchor="middle"
+                style="font-size: 14px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <text transform="translate(482 720) rotate(-70)"
+                style="font-size: 12px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif">57-58</text>
+            <text class="decade-57-58" transform="translate(484 673)" text-anchor="middle"
+                style="font-size: 14px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <text transform="translate(464 735) rotate(-70)"
+                style="font-size: 12px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif">58-59</text>
+            <text class="decade-58-59" transform="translate(466 688)" text-anchor="middle"
+                style="font-size: 14px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <text transform="translate(370 735) rotate(-70)"
+                style="font-size: 12px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif">61-62</text>
+            <text class="decade-61-62" transform="translate(377 688)" text-anchor="middle"
+                style="font-size: 14px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <text transform="translate(354 720) rotate(-70)"
+                style="font-size: 12px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif">62-63</text>
+            <text class="decade-62-63" transform="translate(362 673)" text-anchor="middle"
+                style="font-size: 14px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <text transform="translate(334 708) rotate(-70)"
+                style="font-size: 12px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif">63-64</text>
+            <text class="decade-63-64" transform="translate(344 662)" text-anchor="middle"
+                style="font-size: 14px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <text transform="translate(308 722) rotate(-70)"
+                style="font-size: 20px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif">65 лет</text>
+            <text class="decade-65" transform="translate(323 650)" text-anchor="middle"
+                style="font-size: 14px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <text transform="translate(295 690) rotate(-70)"
+                style="font-size: 12px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif">66-67</text>
+            <text class="decade-66-67" transform="translate(302 645)" text-anchor="middle"
+                style="font-size: 14px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <text transform="translate(274 686) rotate(-70)"
+                style="font-size: 12px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif">67-68</text>
+            <text class="decade-67-68" transform="translate(280 642)" text-anchor="middle"
+                style="font-size: 14px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <text transform="translate(251 686) rotate(-70)"
+                style="font-size: 12px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif">68-69</text>
+            <text class="decade-68-69" transform="translate(260 640)" text-anchor="middle"
+                style="font-size: 14px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <text transform="translate(160 592)"
+                style="font-size: 12px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif">71-72</text>
+            <text class="decade-71-72" transform="translate(210 593)" text-anchor="middle"
+                style="font-size: 14px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <text transform="translate(158 572)"
+                style="font-size: 12px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif">72-73</text>
+            <text class="decade-72-73" transform="translate(209 571)" text-anchor="middle"
+                style="font-size: 14px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <text transform="translate(152 550)"
+                style="font-size: 12px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif">73-74</text>
+            <text class="decade-73-74" transform="translate(205 549)" text-anchor="middle"
+                style="font-size: 14px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <text transform="translate(120 530)"
+                style="font-size: 20px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif">75
+                лет</text>
+            <text class="decade-75" transform="translate(199 528)" text-anchor="middle"
+                style="font-size: 14px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <text transform="translate(135 508)"
+                style="font-size: 12px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif">76-77</text>
+            <text class="decade-76-77" transform="translate(189 508)" text-anchor="middle"
+                style="font-size: 14px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <text transform="translate(125 490)"
+                style="font-size: 12px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif">77-78</text>
+            <text class="decade-77-78" transform="translate(179 490)" text-anchor="middle"
+                style="font-size: 14px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <text transform="translate(110 472)"
+                style="font-size: 12px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif">78-79</text>
+            <text class="decade-78-79" transform="translate(164 474)" text-anchor="middle"
+                style="font-size: 14px;fill: #F4CA76;font-family: Futura, Arial, Helvetica, sans-serif"></text>
+            <circle cx="183.433" cy="322.094" r="4.12185" fill="#F4CA76" />
+            <circle cx="162.235" cy="360.957" r="2.94418" fill="#F4CA76" />
+            <circle cx="174.011" cy="342.114" r="2.94418" fill="#F4CA76" />
+            <circle cx="190.499" cy="300.896" r="2.94418" fill="#F4CA76" />
+            <circle cx="195.21" cy="279.698" r="2.94418" fill="#F4CA76" />
+            <circle cx="197.565" cy="258.5" r="2.94418" fill="#F4CA76" />
+            <circle cx="148.103" cy="377.445" r="2.94418" fill="#F4CA76" />
+            <circle cx="323.473" cy="181.16" r="4.12185" transform="rotate(44.8472 323.473 181.16)" fill="#F4CA76" />
+            <circle cx="281.036" cy="193.765" r="2.94418" transform="rotate(44.8472 281.036 193.765)" fill="#F4CA76" />
+            <circle cx="302.674" cy="188.711" r="2.94418" transform="rotate(44.8472 302.674 188.711)" fill="#F4CA76" />
+            <circle cx="343.432" cy="171.114" r="2.94418" transform="rotate(44.8472 343.432 171.114)" fill="#F4CA76" />
+            <circle cx="361.721" cy="159.407" r="2.94418" transform="rotate(44.8472 361.721 159.407)" fill="#F4CA76" />
+            <circle cx="378.34" cy="146.039" r="2.94418" transform="rotate(44.8472 378.34 146.039)" fill="#F4CA76" />
+            <circle cx="259.39" cy="195.488" r="2.94418" transform="rotate(44.8472 259.39 195.488)" fill="#F4CA76" />
+            <circle cx="4.12185" cy="4.12185" r="4.12185"
+                transform="matrix(-0.707614 0.706599 0.706599 0.707614 523.552 176.503)" fill="#F4CA76" />
+            <circle cx="2.94418" cy="2.94418" r="2.94418"
+                transform="matrix(-0.707614 0.706599 0.706599 0.707614 566.012 190.69)" fill="#F4CA76" />
+            <circle cx="2.94418" cy="2.94418" r="2.94418"
+                transform="matrix(-0.707614 0.706599 0.706599 0.707614 544.364 185.678)" fill="#F4CA76" />
+            <circle cx="2.94418" cy="2.94418" r="2.94418"
+                transform="matrix(-0.707614 0.706599 0.706599 0.707614 503.573 168.161)" fill="#F4CA76" />
+            <circle cx="2.94418" cy="2.94418" r="2.94418"
+                transform="matrix(-0.707614 0.706599 0.706599 0.707614 485.26 156.49)" fill="#F4CA76" />
+            <circle cx="2.94418" cy="2.94418" r="2.94418"
+                transform="matrix(-0.707614 0.706599 0.706599 0.707614 468.615 143.154)" fill="#F4CA76" />
+            <circle cx="2.94418" cy="2.94418" r="2.94418"
+                transform="matrix(-0.707614 0.706599 0.706599 0.707614 587.662 192.371)" fill="#F4CA76" />
+            <circle cx="4.12185" cy="4.12185" r="4.12185" transform="matrix(-1 0 0 1 667.448 318.227)" fill="#F4CA76" />
+            <circle cx="2.94418" cy="2.94418" r="2.94418" transform="matrix(-1 0 0 1 687.468 358.268)" fill="#F4CA76" />
+            <circle cx="2.94418" cy="2.94418" r="2.94418" transform="matrix(-1 0 0 1 675.691 339.426)" fill="#F4CA76" />
+            <circle cx="2.94418" cy="2.94418" r="2.94418" transform="matrix(-1 0 0 1 658.026 298.207)" fill="#F4CA76" />
+            <circle cx="2.94418" cy="2.94418" r="2.94418" transform="matrix(-1 0 0 1 653.315 277.009)" fill="#F4CA76" />
+            <circle cx="2.94418" cy="2.94418" r="2.94418" transform="matrix(-1 0 0 1 650.96 255.811)" fill="#F4CA76" />
+            <circle cx="2.94418" cy="2.94418" r="2.94418" transform="matrix(-1 0 0 1 701.6 374.756)" fill="#F4CA76" />
+            <circle cx="4.12185" cy="4.12185" r="4.12185"
+                transform="matrix(0.999948 0.0101562 0.0101562 -0.999948 179.891 527.919)" fill="#F4CA76" />
+            <circle cx="2.94418" cy="2.94418" r="2.94418"
+                transform="matrix(0.999948 0.0101562 0.0101562 -0.999948 160.278 487.677)" fill="#F4CA76" />
+            <circle cx="2.94418" cy="2.94418" r="2.94418"
+                transform="matrix(0.999948 0.0101562 0.0101562 -0.999948 171.863 506.638)" fill="#F4CA76" />
+            <circle cx="2.94418" cy="2.94418" r="2.94418"
+                transform="matrix(0.999948 0.0101562 0.0101562 -0.999948 187.931 548.022)" fill="#F4CA76" />
+            <circle cx="2.94418" cy="2.94418" r="2.94418"
+                transform="matrix(0.999948 0.0101562 0.0101562 -0.999948 192.426 569.267)" fill="#F4CA76" />
+            <circle cx="2.94418" cy="2.94418" r="2.94418"
+                transform="matrix(0.999948 0.0101562 0.0101562 -0.999948 194.567 591.666)" fill="#F4CA76" />
+            <circle cx="2.94418" cy="2.94418" r="2.94418"
+                transform="matrix(0.999948 0.0101562 0.0101562 -0.999948 146.315 471.047)" fill="#F4CA76" />
+            <circle cx="4.12185" cy="4.12185" r="4.12185"
+                transform="matrix(0.713415 -0.700742 -0.700742 -0.713415 323.843 667.107)" fill="#F4CA76" />
+            <circle cx="2.94418" cy="2.94418" r="2.94418"
+                transform="matrix(0.713415 -0.700742 -0.700742 -0.713415 281.501 652.57)" fill="#F4CA76" />
+            <circle cx="2.94418" cy="2.94418" r="2.94418"
+                transform="matrix(0.713415 -0.700742 -0.700742 -0.713415 303.107 657.76)" fill="#F4CA76" />
+            <circle cx="2.94418" cy="2.94418" r="2.94418"
+                transform="matrix(0.713415 -0.700742 -0.700742 -0.713415 343.752 675.613)" fill="#F4CA76" />
+            <circle cx="2.94418" cy="2.94418" r="2.94418"
+                transform="matrix(0.713415 -0.700742 -0.700742 -0.713415 361.968 687.435)" fill="#F4CA76" />
+            <circle cx="2.94418" cy="2.94418" r="2.94418"
+                transform="matrix(0.713415 -0.700742 -0.700742 -0.713415 378.502 700.907)" fill="#F4CA76" />
+            <circle cx="2.94418" cy="2.94418" r="2.94418"
+                transform="matrix(0.713415 -0.700742 -0.700742 -0.713415 259.866 650.711)" fill="#F4CA76" />
+            <circle cx="4.12185" cy="4.12185" r="4.12185"
+                transform="matrix(0.00916693 -0.999958 -0.999958 -0.00916693 528.119 664.565)" fill="#F4CA76" />
+            <circle cx="2.94418" cy="2.94418" r="2.94418"
+                transform="matrix(0.00916693 -0.999958 -0.999958 -0.00916693 487.897 684.218)" fill="#F4CA76" />
+            <circle cx="2.94418" cy="2.94418" r="2.94418"
+                transform="matrix(0.00916693 -0.999958 -0.999958 -0.00916693 506.846 672.614)" fill="#F4CA76" />
+            <circle cx="2.94418" cy="2.94418" r="2.94418"
+                transform="matrix(0.00916693 -0.999958 -0.999958 -0.00916693 548.214 656.505)" fill="#F4CA76" />
+            <circle cx="2.94418" cy="2.94418" r="2.94418"
+                transform="matrix(0.00916693 -0.999958 -0.999958 -0.00916693 569.455 651.99)" fill="#F4CA76" />
+            <circle cx="2.94418" cy="2.94418" r="2.94418"
+                transform="matrix(0.00916693 -0.999958 -0.999958 -0.00916693 590.674 649.829)" fill="#F4CA76" />
+            <circle cx="2.94418" cy="2.94418" r="2.94418"
+                transform="matrix(0.00916693 -0.999958 -0.999958 -0.00916693 471.281 698.198)" fill="#F4CA76" />
+            <circle cx="4.12185" cy="4.12185" r="4.12185"
+                transform="matrix(-0.72444 -0.689338 -0.689338 0.72444 667.282 524.057)" fill="#F4CA76" />
+            <circle cx="2.94418" cy="2.94418" r="2.94418"
+                transform="matrix(-0.72444 -0.689338 -0.689338 0.72444 654.184 566.865)" fill="#F4CA76" />
+            <circle cx="2.94418" cy="2.94418" r="2.94418"
+                transform="matrix(-0.72444 -0.689338 -0.689338 0.72444 658.641 545.096)" fill="#F4CA76" />
+            <circle cx="2.94418" cy="2.94418" r="2.94418"
+                transform="matrix(-0.72444 -0.689338 -0.689338 0.72444 675.111 503.87)" fill="#F4CA76" />
+            <circle cx="2.94418" cy="2.94418" r="2.94418"
+                transform="matrix(-0.72444 -0.689338 -0.689338 0.72444 686.311 485.266)" fill="#F4CA76" />
+            <circle cx="2.94418" cy="2.94418" r="2.94418"
+                transform="matrix(-0.72444 -0.689338 -0.689338 0.72444 699.218 468.286)" fill="#F4CA76" />
+            <circle cx="2.94418" cy="2.94418" r="2.94418"
+                transform="matrix(-0.72444 -0.689338 -0.689338 0.72444 653.057 588.551)" fill="#F4CA76" />
+            <path
+                d="M457.766 532.297C457.606 532.656 457.178 533.083 456.819 533.243C453.786 534.637 445.421 536.165 439.627 530.371C437.069 527.813 436.901 523.843 439.244 521.5C440.633 520.11 442.591 519.61 444.487 519.965C444.305 518.998 444.349 518.02 444.615 517.11C444.882 516.199 445.364 515.381 446.022 514.721C448.366 512.378 452.336 512.547 454.893 515.105C460.687 520.899 459.16 529.264 457.766 532.297Z"
+                fill="#FF4A96" />
+            <defs>
+                <filter id="filter0_d_29_3" x="374.804" y="374.5" width="94.2137" height="94.2137"
+                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha" />
+                    <feOffset />
+                    <feGaussianBlur stdDeviation="8.83253" />
+                    <feComposite in2="hardAlpha" operator="out" />
+                    <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0" />
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_29_3" />
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_29_3" result="shape" />
+                </filter>
+                <filter id="filter1_d_29_3" x="260.781" y="649.928" width="27.7966" height="40.0887"
+                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha" />
+                    <feOffset />
+                    <feGaussianBlur stdDeviation="2.5" />
+                    <feComposite in2="hardAlpha" operator="out" />
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0" />
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_29_3" />
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_29_3" result="shape" />
+                </filter>
+            </defs>
+        </svg>
+    </div>
+    <div class="purpose">
+        <div class="purpose__personal">
+            <p class="purpose__title purpose__title--personal">Личное предназначение</p>
+            <div class="purpose__container">
+                <div class="purpose__wrapper">
+                    <div class="purpose__personal-earth">
+                        <span class="purpose__personal-earth-title">Земля<span class="vissually-hidden">:</span></span>
+                        <span class="purpose__circle purpose__personal-earth-content"></span>
+                    </div>
+                    <div class="purpose__personal-sky">
+                        <span class="purpose__personal-sky-title">Небо<span class="vissually-hidden">:</span></span>
+                        <span class="purpose__circle purpose__personal-sky-content"></span>
+                    </div>
+                </div>
+                <svg class="purpose__decor purpose__decor--personal" width="105" height="28" viewBox="0 0 105 28"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M53.5231 27.1269H50.9143C50.8872 22.4257 50.0312 19.2326 48.3463 17.5478C46.6886 15.8901 43.5228 15.0613 38.8487 15.0613H17.4891C14.5271 15.0613 11.959 14.7623 9.78505 14.1645C7.58388 13.5666 5.76316 12.6563 4.32288 11.4334C2.88261 10.2105 1.8092 8.66155 1.10265 6.78648C0.3961 4.93858 0.042826 2.75099 0.042826 0.223723L2.65162 0.223723C2.65162 3.07709 3.16795 5.40055 4.20059 7.1941C5.20607 8.98765 6.80939 10.3056 9.01056 11.1481C11.1846 12.0177 14.0108 12.4525 17.4891 12.4525L38.8487 12.4525C41.539 12.4525 43.8081 12.7106 45.656 13.2269C47.5311 13.7433 49.0393 14.5721 50.1806 15.7134C51.3491 16.8548 52.1916 18.363 52.7079 20.2381C53.2514 22.1132 53.5231 24.4094 53.5231 27.1269ZM104.395 0.223723C104.395 2.75099 104.041 4.93858 103.335 6.78648C102.628 8.66155 101.555 10.2105 100.115 11.4334C98.6743 12.6563 96.8536 13.5666 94.6524 14.1645C92.4784 14.7623 89.9104 15.0613 86.9483 15.0613H65.5888C60.9147 15.0613 57.7353 15.8901 56.0504 17.5478C54.3927 19.2326 53.5503 22.4257 53.5231 27.1269H50.9143C50.9415 24.4094 51.2133 22.1132 51.7296 20.2381C52.2731 18.363 53.1155 16.8548 54.2569 15.7134C55.3982 14.5721 56.8928 13.7433 58.7407 13.2269C60.6158 12.7106 62.8985 12.4525 65.5888 12.4525L86.9483 12.4525C90.4267 12.4525 93.2529 12.0177 95.4269 11.1481C97.6281 10.3056 99.245 8.98765 100.278 7.1941C101.31 5.40055 101.813 3.07709 101.786 0.223723L104.395 0.223723ZM53.5231 27.1269H50.9143V18.3222H53.5231V27.1269Z"
+                        fill="#F4CA76" />
+                </svg>
+                <div class="purpose__circle purpose__circle--big purpose__personal-any"></div>
+            </div>
+        </div>
+        <div class="purpose__generic">
+            <p class="purpose__title purpose__title--generic">Родовое предназначение</p>
+            <div class="purpose__container">
+                <div class="purpose__wrapper">
+                    <div class="purpose__generic-mother">
+                        <span class="purpose__generic-mother-title">Мать<span class="vissually-hidden">:</span></span>
+                        <span class="purpose__circle purpose__generic-mother-content"></span>
+                    </div>
+                    <div class="purpose__generic-father">
+                        <span class="purpose__generic-father-title">Отец<span class="vissually-hidden">:</span></span>
+                        <span class="purpose__circle purpose__generic-father-content"></span>
+                    </div>
+                </div>
+                <svg class="purpose__decor purpose__decor--generic" width="105" height="28" viewBox="0 0 105 28" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M53.5231 27.1269H50.9143C50.8872 22.4257 50.0312 19.2326 48.3463 17.5478C46.6886 15.8901 43.5228 15.0613 38.8487 15.0613H17.4891C14.5271 15.0613 11.959 14.7623 9.78505 14.1645C7.58388 13.5666 5.76316 12.6563 4.32288 11.4334C2.88261 10.2105 1.8092 8.66155 1.10265 6.78648C0.3961 4.93858 0.042826 2.75099 0.042826 0.223723L2.65162 0.223723C2.65162 3.07709 3.16795 5.40055 4.20059 7.1941C5.20607 8.98765 6.80939 10.3056 9.01056 11.1481C11.1846 12.0177 14.0108 12.4525 17.4891 12.4525L38.8487 12.4525C41.539 12.4525 43.8081 12.7106 45.656 13.2269C47.5311 13.7433 49.0393 14.5721 50.1806 15.7134C51.3491 16.8548 52.1916 18.363 52.7079 20.2381C53.2514 22.1132 53.5231 24.4094 53.5231 27.1269ZM104.395 0.223723C104.395 2.75099 104.041 4.93858 103.335 6.78648C102.628 8.66155 101.555 10.2105 100.115 11.4334C98.6743 12.6563 96.8536 13.5666 94.6524 14.1645C92.4784 14.7623 89.9104 15.0613 86.9483 15.0613H65.5888C60.9147 15.0613 57.7353 15.8901 56.0504 17.5478C54.3927 19.2326 53.5503 22.4257 53.5231 27.1269H50.9143C50.9415 24.4094 51.2133 22.1132 51.7296 20.2381C52.2731 18.363 53.1155 16.8548 54.2569 15.7134C55.3982 14.5721 56.8928 13.7433 58.7407 13.2269C60.6158 12.7106 62.8985 12.4525 65.5888 12.4525L86.9483 12.4525C90.4267 12.4525 93.2529 12.0177 95.4269 11.1481C97.6281 10.3056 99.245 8.98765 100.278 7.1941C101.31 5.40055 101.813 3.07709 101.786 0.223723L104.395 0.223723ZM53.5231 27.1269H50.9143V18.3222H53.5231V27.1269Z"
+                        fill="#F4CA76" />
+                </svg>
+                <div class="purpose__circle purpose__circle--big purpose__generic-any"></div>
+                <svg class="purpose__decor purpose__decor--big" width="215" height="56" viewBox="0 0 215 56" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M110.021 55.9447H104.662C104.606 46.288 102.848 39.7293 99.387 36.2685C95.9821 32.8636 89.4792 31.1611 79.8783 31.1611L36.0047 31.1611C29.9205 31.1611 24.6456 30.5471 20.1801 29.3191C15.6588 28.0911 11.9189 26.2212 8.96052 23.7093C6.00212 21.1975 3.79727 18.0158 2.34598 14.1643C0.894694 10.3686 0.169049 5.87519 0.169049 0.684043L5.52766 0.684043C5.52766 6.54502 6.58822 11.3175 8.70933 15.0016C10.7746 18.6856 14.0679 21.3928 18.5893 23.1232C23.0548 24.9094 28.8599 25.8025 36.0047 25.8025L79.8783 25.8025C85.4044 25.8025 90.0653 26.3328 93.861 27.3934C97.7125 28.4539 100.81 30.1564 103.155 32.5008C105.555 34.8452 107.285 37.9431 108.346 41.7946C109.462 45.6461 110.021 50.3628 110.021 55.9447ZM214.513 0.684043C214.513 5.87519 213.788 10.3686 212.336 14.1643C210.885 18.0158 208.68 21.1975 205.722 23.7093C202.763 26.2212 199.024 28.0911 194.502 29.3191C190.037 30.5471 184.762 31.1611 178.678 31.1611H134.804C125.203 31.1611 118.672 32.8636 115.212 36.2685C111.807 39.7293 110.076 46.288 110.021 55.9447H104.662C104.718 50.3628 105.276 45.6461 106.336 41.7946C107.453 37.9431 109.183 34.8452 111.528 32.5008C113.872 30.1564 116.942 28.4539 120.738 27.3934C124.589 26.3328 129.278 25.8025 134.804 25.8025L178.678 25.8025C185.822 25.8025 191.628 24.9094 196.093 23.1232C200.614 21.3928 203.936 18.6856 206.057 15.0016C208.178 11.3175 209.211 6.54502 209.155 0.684043L214.513 0.684043ZM110.021 55.9447H104.662V37.8594H110.021V55.9447Z"
+                        fill="#F4CA76" />
+                </svg>
+            </div>
+        </div>
+        <div class="purpose__spiritual">
+            <div class="purpose__spiritual-wrapper">
+                <p class="purpose__title purpose__title-spiritual">Духовное <br class="desktop-hidden">предназначение<span class="vissually-hidden">:</span></p>
+                <div class="purpose__circle purpose__circle--big purpose__spiritual-usual">
+                    <span class="purpose__spiritual-usual-content"></span>
+                </div>
+            </div>
+            <div class="purpose__spiritual-higher">
+                <p class="purpose__spiritual-higher-title">Высшее <br class="desktop-hidden">духовное<span class="vissually-hidden">:</span></p>
+                <span class="purpose__circle purpose__circle--big purpose__spiritual-higher-content"></span>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper__button" id="wrapper__button">
+        <a class="button button__trening" href="#" id="button__trening">Узнать предназначение<br>и выиграть тренинг по
+            Матрице</a>
+        <a class="button" href="#" id="button__trening">Заказать разбор</a>
+        <button class="button button__download" type="button">Выгрузить в&nbsp;PDF</button>
+    </div>
+    <div class="health-card">
+        <p class="health-card__title">Карта здоровья</p>
+        <table class="health-card__table table">
+            <thead class="table__thead">
+                <th class="table__title">Небо</th>
+                <th class="table__title">Земля</th>
+                <th class="table__title">Ключ</th>
+                <th class="table__title table__title--description">Чакра</th>
+            </thead>
+            <tr class="table__stroke table__stroke-1">
+                <td class="table__column-1 table__sky-violet"></td>
+                <td class="table__column-2 table__earth-violet"></td>
+                <td class="table__column-3 table__any-violet"></td>
+                <td class="table__column-4">Сахасрара - чакра макушки, связь с Источником, духовный канал</td>
+            </tr>
+            <tr class="table__stroke table__stroke-2">
+                <td class="table__column-1 table__sky-blue"></td>
+                <td class="table__column-2 table__earth-blue"></td>
+                <td class="table__column-3 table__any-blue"></td>
+                <td class="table__column-4">Аджна - чакра третьего глаза, мысли, интуиция, видение, область головы
+                </td>
+            </tr>
+            <tr class="table__stroke table__stroke-3">
+                <td class="table__column-1 table__sky-lightblue"></td>
+                <td class="table__column-2 table__earth-lightblue"></td>
+                <td class="table__column-3 table__any-lightblue"></td>
+                <td class="table__column-4">Вишудха - горловая чакра, самовыражение, органы в области горла и шеи
+                </td>
+            </tr>
+            <tr class="table__stroke table__stroke-4">
+                <td class="table__column-1 table__sky-green"></td>
+                <td class="table__column-2 table__earth-green"></td>
+                <td class="table__column-3 table__any-green"></td>
+                <td class="table__column-4">Анахата - сердечная чакра, чувства, эмоции, страхи, органы в зоне
+                    грудной клетки</td>
+            </tr>
+            <tr class="table__stroke table__stroke-5">
+                <td class="table__column-1 table__sky-yellow"></td>
+                <td class="table__column-2 table__earth-yellow"></td>
+                <td class="table__column-3 table__any-yellow"></td>
+                <td class="table__column-4">Манипура - центр силы, живот, желудок, эмоции</td>
+            </tr>
+            <tr class="table__stroke table__stroke-6">
+                <td class="table__column-1 table__sky-orange"></td>
+                <td class="table__column-2 table__earth-orange"></td>
+                <td class="table__column-3 table__any-orange"></td>
+                <td class="table__column-4">Свадхистана - сексуальный центр, желания, органы репродуктивной системы
+                </td>
+            </tr>
+            <tr class="table__stroke table__stroke-7">
+                <td class="table__column-1 table__sky-red"></td>
+                <td class="table__column-2 table__earth-red"></td>
+                <td class="table__column-3 table__any-red"></td>
+                <td class="table__column-4">Муладхара - корневой центр, связь с родом, зона копчика</td>
+            </tr>
+            <tr class="table__stroke table__stroke-8">
+                <td class="table__column-1 table__sky-summ"></td>
+                <td class="table__column-2 table__earth-summ"></td>
+                <td class="table__column-3 table__any-summ"></td>
+                <td class="table__column-4">Организм, все системы организма в целом</td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="https://unpkg.com/imask"></script>
+    <script src="js/pdfmake.js"></script>
+    <script src="js/vfs_fonts.js"></script>
+    <script src="js/script.js" type="module"></script>
+
+</body>
+
+</html>
